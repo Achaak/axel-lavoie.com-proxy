@@ -1,0 +1,24 @@
+{
+  "name": "axel-lavoie.com-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achaak/axel-lavoie.com-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Achaak/axel-lavoie.com-proxy/issues"
+  },
+  "homepage": "https://github.com/Achaak/axel-lavoie.com-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.1"
+  }
+}

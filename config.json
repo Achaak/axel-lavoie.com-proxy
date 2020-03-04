@@ -1,12 +1,12 @@
 {
     "routes": [
         {
-            "route": "/",
-            "address": "http://localhost:5000"
+            "route": "/CMS",
+            "address": "http://localhost:1337"
         },
         {
-            "route": "/CMS",
-            "address": "http://www.example.org"
+            "route": "/",
+            "address": "http://localhost:5000"
         }
     ]
 }

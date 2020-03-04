@@ -8,15 +8,18 @@ const { routes } = require('./config.json');
 const app = express();
 
 
-app.use('/CMS', createProxyMiddleware({ target: 'http://localhost:1337/', // target host
-changeOrigin: true, // needed for virtual hosted sites
-ws: true, // proxy websockets
-pathRewrite: {
-  '^/CMS': '/', // rewrite path
-},
-}));
-
-app.use('/', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true }));
+for (route of routes) {
+    app.use(route.route, 
+        createProxyMiddleware({ 
+            target: route.address, // target host
+            changeOrigin: true, // needed for virtual hosted sites
+            ws: true, // proxy websockets
+            pathRewrite: {
+                ['^'+route.route]: '/', // rewrite path
+            },
+        }
+    ));
+}
 
 app.listen(80, () => {
     console.log('Proxy listening on port 80');

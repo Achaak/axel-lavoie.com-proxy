@@ -7,6 +7,10 @@
         {
             "route": "/",
             "address": "http://localhost:5000"
+        },
+        {
+            "route": "/sw-enchant",
+            "address": "http://localhost:3000"
         }
     ]
 }

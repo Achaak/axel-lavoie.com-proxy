@@ -1,12 +1,12 @@
 {
     "routes": [
         {
-            "route": "/accounting",
-            "address": "http://localhost:4200"
-        },
-        {
             "route": "/accounting/CMS",
             "address": "http://localhost:4201"
+        },
+        {
+            "route": "/accounting",
+            "address": "http://localhost:4200"
         },
         {
             "route": "/CMS",

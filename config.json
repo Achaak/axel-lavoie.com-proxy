@@ -1,16 +1,20 @@
 {
     "routes": [
         {
+            "route": "/accounting",
+            "address": "http://localhost:4200"
+        },
+        {
+            "route": "/accounting/CMS",
+            "address": "http://localhost:4201"
+        },
+        {
             "route": "/CMS",
             "address": "http://localhost:1337"
         },
         {
             "route": "/",
             "address": "http://localhost:5000"
-        },
-        {
-            "route": "/sw-enchant",
-            "address": "http://localhost:3000"
         }
     ]
 }

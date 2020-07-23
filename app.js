@@ -13,10 +13,10 @@ for (route of routes) {
         createProxyMiddleware({ 
             target: route.address, // target host
             changeOrigin: true, // needed for virtual hosted sites
-            ws: true, // proxy websockets
-            pathRewrite: {
-                ['^'+route.route]: '/', // rewrite path
-            },
+            //ws: true, // proxy websockets
+            //pathRewrite: {
+            //    ['^'+route.route]: '/', // rewrite path
+            //},
         }
     ));
 }

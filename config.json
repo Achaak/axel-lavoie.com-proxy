@@ -1,6 +1,10 @@
 {
     "routes": [
         {
+            "route": "/space-balls",
+            "address": "http://localhost:3001"
+        },
+        {
             "route": "/accounting/CMS",
             "address": "http://localhost:4201"
         },

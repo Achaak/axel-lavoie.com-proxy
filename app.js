@@ -14,9 +14,9 @@ for (route of routes) {
             target: route.address, // target host
             changeOrigin: true, // needed for virtual hosted sites
             //ws: true, // proxy websockets
-            //pathRewrite: {
-            //    ['^'+route.route]: '/', // rewrite path
-            //},
+            pathRewrite: {
+                ['^'+route.route]: '/', // rewrite path
+            },
         }
     ));
 }

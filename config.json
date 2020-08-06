@@ -5,6 +5,10 @@
             "address": "http://localhost:3001"
         },
         {
+            "route": "/plantProject/CMS",
+            "address": "http://localhost:1338"
+        },
+        {
             "route": "/accounting/CMS",
             "address": "http://localhost:4201"
         },

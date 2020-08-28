@@ -1,6 +1,10 @@
 {
     "routes": [
         {
+            "route": "/test",
+            "address": "http://localhost:4444"
+        },
+        {
             "route": "/space-balls",
             "address": "http://localhost:3001"
         },

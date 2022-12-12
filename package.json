@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Achaak/axel-lavoie.com-proxy#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-proxy-middleware": "^1.0.1"
   }
 }
